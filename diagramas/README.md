@@ -1,4 +1,11 @@
-# Diagramas
+# 2026-APS-SneakerControl — Sistema de Encomendas de Tênis
 
-Cada diagrama fica em dois arquivos com o mesmo nome. O `.drawio` serve para editar, e o `.png` aparece na página do documento.
-O nome de cada diagrama é combinado na aula dele, como `casos-de-uso.drawio` e `casos-de-uso.png`.
+## Apresentação do Projeto
+O ControlarSneaker é um sistema para organizar as vendas e entregas da loja. O controle das encomendas e endereços de entrega é feita manualmente no site da loja, Resultado em eventuais atrasos ou dados incompletos. O Sistema centraliza os cadastro do cliente, pedido e endereços, permitindo acompanhar o status de cada entrega até a casa do cliente.
+## Autoria
+- **Aluno:** [Kauê Mendes]
+- **Turma/Ano:** 2 ANO/2026 — Análise e Projeto de Sistemas
+
+## Cliente
+- **Cliente:** Kauê (proprietário e vendedor da loja de tênis).
+
