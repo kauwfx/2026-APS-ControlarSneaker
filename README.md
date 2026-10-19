@@ -1,20 +1,15 @@
-# Nome do Sistema: o que ele faz, em uma frase
-
-> **Antes de tudo.** Este é o modelo do Projeto Integrador de Análise e Projeto de Sistemas. Se você está lendo isto no seu próprio repositório, deu certo. Troque o título acima pelo nome do seu sistema e por uma frase que diga o que ele faz, preencha a autoria e o cliente e apague este aviso.
+# ControlarSneaker: Sistema de Encomendas de Tênis
 
 Projeto Integrador de Análise e Projeto de Sistemas, 2026.
 IFPR, Centro de Referência Ponta Grossa. Técnico em Informática Integrado ao Ensino Médio.
 
-**Autoria:** _seu nome, como aparece no AVA_
+**Autoria:** Kauê Mendes De Lima Silva
 
-**Cliente:** _o papel do cliente e a relação dele com você, no máximo com o primeiro nome. Por exemplo, "Dona Rosa, minha avó, que faz marmita por encomenda"._
+**Cliente:** Kauê, proprietário e vendedor da loja.
 
-## Apresentação do projeto
 
-<!-- Três a cinco frases para quem nunca ouviu falar do seu sistema. Qual é o problema, para quem, e o que o sistema faz a respeito.
-     Escreva depois de terminar a 4.1. É um resumo dela, com as suas palavras. -->
-
-_Escreva aqui a apresentação do projeto._
+## Apresentação do Projeto
+O ControlarSneaker é um sistema para organizar as vendas e entregas da loja. O controle das encomendas e dos endereços de entrega é feito manualmente, o que pode resultar em atrasos ou dados incompletos. O sistema centraliza os cadastros dos clientes, pedidos e endereços, permitindo acompanhar o status de cada entrega até a casa do cliente.
 
 ## Documento do projeto
 
