@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="Yo6tgQrBVEIC5p71BQje">
+    <mxGraphModel dx="1694" dy="940" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="usuario" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#000000;" value="Usuario&#xa;--&#xa;- nome: String&#xa;- login: String&#xa;- senha: String&#xa;--&#xa;+ autenticar(): boolean" vertex="1">
+          <mxGeometry height="130" width="220" x="60" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cliente" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#000000;" value="Cliente&#xa;--&#xa;- nome: String&#xa;- telefone: String&#xa;- endereco: String&#xa;--&#xa;+ consultarHistorico(): List" vertex="1">
+          <mxGeometry height="130" width="220" x="60" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="vendedor" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#000000;" value="Vendedor&#xa;--&#xa;&#xa;--&#xa;+ registrarPedido(): boolean" vertex="1">
+          <mxGeometry height="90" width="220" x="340" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="produto" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#000000;" value="Produto&#xa;--&#xa;- codigo: String&#xa;- modelo: String&#xa;- tamanho: int&#xa;- preco: double&#xa;--&#xa;+ estaDisponivel(): boolean" vertex="1">
+          <mxGeometry height="140" width="240" x="720" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pedido" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#000000;" value="Pedido&#xa;--&#xa;- numero: int&#xa;- dataCriacao: Data&#xa;- valorTotal: double&#xa;--&#xa;+ calcularTotal(): double&#xa;+ cancelar(): void" vertex="1">
+          <mxGeometry height="150" width="240" x="350" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="entrega" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#000000;" value="Entrega&#xa;--&#xa;- codigoRastreio: String&#xa;- status: String&#xa;- dataEnvio: Data&#xa;--&#xa;+ atualizarStatus(): void&#xa;+ estaConcluida(): boolean" vertex="1">
+          <mxGeometry height="140" width="240" x="720" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="rel-heranca-vendedor" edge="1" parent="1" source="vendedor" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;strokeColor=#6c8ebf;strokeWidth=2;" target="usuario" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="rel-heranca-cliente" edge="1" parent="1" source="cliente" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;strokeColor=#6c8ebf;strokeWidth=2;" target="usuario" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="rel-cliente-pedido" edge="1" parent="1" source="cliente" style="endArrow=none;html=1;rounded=0;strokeColor=#6c8ebf;strokeWidth=2;fontStyle=2;fontColor=#000000;" target="pedido" value="faz">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl-cliente-1" connectable="0" parent="rel-cliente-pedido" style="edgeLabel;html=1;align=center;verticalAlign=bottom;resizable=0;points=[];fontStyle=1;fontColor=#000000;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.8" as="geometry">
+            <mxPoint x="-10" y="-5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lbl-pedido-0n" connectable="0" parent="rel-cliente-pedido" style="edgeLabel;html=1;align=center;verticalAlign=bottom;resizable=0;points=[];fontStyle=1;fontColor=#000000;" value="0..*" vertex="1">
+          <mxGeometry relative="1" x="0.8" as="geometry">
+            <mxPoint x="15" y="-5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-vendedor-pedido" edge="1" parent="1" source="vendedor" style="endArrow=none;html=1;rounded=0;strokeColor=#6c8ebf;strokeWidth=2;fontStyle=2;fontColor=#000000;" target="pedido" value="registra">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl-vendedor-1" connectable="0" parent="rel-vendedor-pedido" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontStyle=1;fontColor=#000000;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.7" as="geometry">
+            <mxPoint x="15" y="-5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lbl-pedido-0n-vend" connectable="0" parent="rel-vendedor-pedido" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontStyle=1;fontColor=#000000;" value="0..*" vertex="1">
+          <mxGeometry relative="1" x="0.7" as="geometry">
+            <mxPoint x="-15" y="5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-produto-pedido" edge="1" parent="1" source="produto" style="endArrow=none;startArrow=diamondThin;startFill=1;startSize=14;html=1;rounded=0;strokeColor=#6c8ebf;strokeWidth=2;fontStyle=2;fontColor=#000000;" target="pedido" value="contém">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl-produto-1" connectable="0" parent="rel-produto-pedido" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontStyle=1;fontColor=#000000;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.7" as="geometry">
+            <mxPoint x="15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lbl-pedido-1n" connectable="0" parent="rel-produto-pedido" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontStyle=1;fontColor=#000000;" value="1..*" vertex="1">
+          <mxGeometry relative="1" x="0.7" as="geometry">
+            <mxPoint x="15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-pedido-entrega" edge="1" parent="1" source="pedido" style="endArrow=none;html=1;rounded=0;strokeColor=#6c8ebf;strokeWidth=2;fontStyle=2;fontColor=#000000;" target="entrega" value="tem">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl-pedido-comp-1" connectable="0" parent="rel-pedido-entrega" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontStyle=1;fontColor=#000000;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.7" as="geometry">
+            <mxPoint x="15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lbl-entrega-1" connectable="0" parent="rel-pedido-entrega" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontStyle=1;fontColor=#000000;" value="1" vertex="1">
+          <mxGeometry relative="1" x="0.7" as="geometry">
+            <mxPoint x="15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
