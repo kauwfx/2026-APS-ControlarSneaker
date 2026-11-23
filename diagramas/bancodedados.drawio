@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" pages="2">
+  <diagram name="Página-1" id="Dc_dBTaTiQULRVoqc0fK">
+    <mxGraphModel dx="683" dy="813" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="tbl_usuario" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=13;strokeWidth=1.5;" value="usuario" vertex="1">
+          <mxGeometry height="158" width="210" x="80" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="col_u_id" parent="tbl_usuario" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontStyle=1;fontColor=#000000;fontSize=12;" value="PK id: INT" vertex="1">
+          <mxGeometry height="26" width="210" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="col_u_nome" parent="tbl_usuario" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontColor=#000000;fontSize=12;" value="nome: VARCHAR" vertex="1">
+          <mxGeometry height="26" width="210" y="54" as="geometry" />
+        </mxCell>
+        <mxCell id="col_u_login" parent="tbl_usuario" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontColor=#000000;fontSize=12;" value="login: VARCHAR" vertex="1">
+          <mxGeometry height="26" width="210" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="col_u_senha" parent="tbl_usuario" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontColor=#000000;fontSize=12;" value="senha: VARCHAR" vertex="1">
+          <mxGeometry height="26" width="210" y="106" as="geometry" />
+        </mxCell>
+        <mxCell id="col_u_tipo" parent="tbl_usuario" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontColor=#000000;fontSize=12;" value="tipo: VARCHAR" vertex="1">
+          <mxGeometry height="26" width="210" y="132" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_pedido" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=13;strokeWidth=1.5;" value="pedido" vertex="1">
+          <mxGeometry height="184" width="220" x="450" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="col_p_id" parent="tbl_pedido" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontStyle=1;fontColor=#000000;fontSize=12;" value="PK id: INT" vertex="1">
+          <mxGeometry height="26" width="220" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="col_p_num" parent="tbl_pedido" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontColor=#000000;fontSize=12;" value="numero: INT" vertex="1">
+          <mxGeometry height="26" width="220" y="54" as="geometry" />
+        </mxCell>
+        <mxCell id="col_p_data" parent="tbl_pedido" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontColor=#000000;fontSize=12;" value="data_criacao: DATE" vertex="1">
+          <mxGeometry height="26" width="220" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="col_p_valor" parent="tbl_pedido" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontColor=#000000;fontSize=12;" value="valor_total: DECIMAL" vertex="1">
+          <mxGeometry height="26" width="220" y="106" as="geometry" />
+        </mxCell>
+        <mxCell id="col_p_cli" parent="tbl_pedido" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontStyle=2;fontColor=#000000;fontSize=12;" value="FK cliente_id: INT" vertex="1">
+          <mxGeometry height="26" width="220" y="132" as="geometry" />
+        </mxCell>
+        <mxCell id="col_p_ven" parent="tbl_pedido" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontStyle=2;fontColor=#000000;fontSize=12;" value="FK vendedor_id: INT" vertex="1">
+          <mxGeometry height="26" width="220" y="158" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_cliente" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=13;strokeWidth=1.5;" value="cliente" vertex="1">
+          <mxGeometry height="132" width="210" x="830" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="col_c_id" parent="tbl_cliente" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontStyle=1;fontColor=#000000;fontSize=12;" value="PK id: INT" vertex="1">
+          <mxGeometry height="26" width="210" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="col_c_nome" parent="tbl_cliente" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontColor=#000000;fontSize=12;" value="nome: VARCHAR" vertex="1">
+          <mxGeometry height="26" width="210" y="54" as="geometry" />
+        </mxCell>
+        <mxCell id="col_c_tel" parent="tbl_cliente" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontColor=#000000;fontSize=12;" value="telefone: VARCHAR" vertex="1">
+          <mxGeometry height="26" width="210" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="col_c_end" parent="tbl_cliente" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontColor=#000000;fontSize=12;" value="endereco: VARCHAR" vertex="1">
+          <mxGeometry height="26" width="210" y="106" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_produto" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=13;strokeWidth=1.5;" value="produto" vertex="1">
+          <mxGeometry height="184" width="210" x="220" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="col_pr_id" parent="tbl_produto" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontStyle=1;fontColor=#000000;fontSize=12;" value="PK id: INT" vertex="1">
+          <mxGeometry height="26" width="210" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="col_pr_cod" parent="tbl_produto" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontColor=#000000;fontSize=12;" value="codigo: VARCHAR" vertex="1">
+          <mxGeometry height="26" width="210" y="54" as="geometry" />
+        </mxCell>
+        <mxCell id="col_pr_mod" parent="tbl_produto" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontColor=#000000;fontSize=12;" value="modelo: VARCHAR" vertex="1">
+          <mxGeometry height="26" width="210" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="col_pr_tam" parent="tbl_produto" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontColor=#000000;fontSize=12;" value="tamanho: INT" vertex="1">
+          <mxGeometry height="26" width="210" y="106" as="geometry" />
+        </mxCell>
+        <mxCell id="col_pr_pre" parent="tbl_produto" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontColor=#000000;fontSize=12;" value="preco: DECIMAL" vertex="1">
+          <mxGeometry height="26" width="210" y="132" as="geometry" />
+        </mxCell>
+        <mxCell id="col_pr_ped" parent="tbl_produto" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontStyle=2;fontColor=#000000;fontSize=12;" value="FK pedido_id: INT" vertex="1">
+          <mxGeometry height="26" width="210" y="158" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_entrega" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=13;strokeWidth=1.5;" value="entrega" vertex="1">
+          <mxGeometry height="158" width="230" x="680" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="col_e_id" parent="tbl_entrega" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontStyle=1;fontColor=#000000;fontSize=12;" value="PK id: INT" vertex="1">
+          <mxGeometry height="26" width="230" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="col_e_cod" parent="tbl_entrega" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontColor=#000000;fontSize=12;" value="codigo_rastreio: VARCHAR" vertex="1">
+          <mxGeometry height="26" width="230" y="54" as="geometry" />
+        </mxCell>
+        <mxCell id="col_e_sta" parent="tbl_entrega" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontColor=#000000;fontSize=12;" value="status: VARCHAR" vertex="1">
+          <mxGeometry height="26" width="230" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="col_e_dat" parent="tbl_entrega" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontColor=#000000;fontSize=12;" value="data_envio: DATE" vertex="1">
+          <mxGeometry height="26" width="230" y="106" as="geometry" />
+        </mxCell>
+        <mxCell id="col_e_ped" parent="tbl_entrega" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontStyle=2;fontColor=#000000;fontSize=12;" value="FK pedido_id: INT" vertex="1">
+          <mxGeometry height="26" width="230" y="132" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_usu_ped" edge="1" parent="1" source="tbl_usuario" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERzeroToMany;startArrow=ERmandOne;rounded=0;strokeColor=#000000;fontColor=#000000;strokeWidth=1.5;" target="tbl_pedido" value="registra">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_cli_ped" edge="1" parent="1" source="tbl_cliente" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERzeroToMany;startArrow=ERmandOne;rounded=0;strokeColor=#000000;fontColor=#000000;strokeWidth=1.5;" target="tbl_pedido" value="faz">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_ped_pro" edge="1" parent="1" source="tbl_pedido" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;startArrow=ERmandOne;rounded=0;strokeColor=#000000;fontColor=#000000;strokeWidth=1.5;" target="tbl_produto" value="composto por">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_ped_ent" edge="1" parent="1" source="tbl_pedido" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmandOne;rounded=0;strokeColor=#000000;fontColor=#000000;strokeWidth=1.5;" target="tbl_entrega" value="possui">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="e4KWSrzM3N3mIA0_a6eq" name="Página-2">
+    <mxGraphModel dx="1067" dy="1270" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="tbl_usuario" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=32;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#233763;strokeColor=#233763;fontColor=#ffffff;fontSize=13;strokeWidth=1.5;" value="usuario" vertex="1">
+          <mxGeometry height="172" width="230" x="60" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="col_u_id" parent="tbl_usuario" style="text;strokeColor=#d1d5db;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontStyle=1;fontColor=#233763;fontSize=12;" value="PK   id                              INT" vertex="1">
+          <mxGeometry height="28" width="230" y="32" as="geometry" />
+        </mxCell>
+        <mxCell id="col_u_nome" parent="tbl_usuario" style="text;strokeColor=#d1d5db;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontColor=#111827;fontSize=12;" value="        nome                  VARCHAR" vertex="1">
+          <mxGeometry height="28" width="230" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="col_u_login" parent="tbl_usuario" style="text;strokeColor=#d1d5db;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontColor=#111827;fontSize=12;" value="        login                   VARCHAR" vertex="1">
+          <mxGeometry height="28" width="230" y="88" as="geometry" />
+        </mxCell>
+        <mxCell id="col_u_senha" parent="tbl_usuario" style="text;strokeColor=#d1d5db;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontColor=#111827;fontSize=12;" value="        senha                 VARCHAR" vertex="1">
+          <mxGeometry height="28" width="230" y="116" as="geometry" />
+        </mxCell>
+        <mxCell id="col_u_tipo" parent="tbl_usuario" style="text;strokeColor=#d1d5db;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontColor=#111827;fontSize=12;" value="        tipo                     VARCHAR" vertex="1">
+          <mxGeometry height="28" width="230" y="144" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_pedido" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=32;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#233763;strokeColor=#233763;fontColor=#ffffff;fontSize=13;strokeWidth=1.5;" value="pedido" vertex="1">
+          <mxGeometry height="200" width="240" x="450" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="col_p_id" parent="tbl_pedido" style="text;strokeColor=#d1d5db;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontStyle=1;fontColor=#233763;fontSize=12;" value="PK   id                                INT" vertex="1">
+          <mxGeometry height="28" width="240" y="32" as="geometry" />
+        </mxCell>
+        <mxCell id="col_p_num" parent="tbl_pedido" style="text;strokeColor=#d1d5db;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontColor=#111827;fontSize=12;" value="        numero                        INT" vertex="1">
+          <mxGeometry height="28" width="240" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="col_p_data" parent="tbl_pedido" style="text;strokeColor=#d1d5db;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontColor=#111827;fontSize=12;" value="        data_criacao           DATE" vertex="1">
+          <mxGeometry height="28" width="240" y="88" as="geometry" />
+        </mxCell>
+        <mxCell id="col_p_valor" parent="tbl_pedido" style="text;strokeColor=#d1d5db;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontColor=#111827;fontSize=12;" value="        valor_total        DECIMAL" vertex="1">
+          <mxGeometry height="28" width="240" y="116" as="geometry" />
+        </mxCell>
+        <mxCell id="col_p_cli" parent="tbl_pedido" style="text;strokeColor=#d1d5db;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontColor=#233763;fontSize=12;" value="FK   cliente_id                    INT" vertex="1">
+          <mxGeometry height="28" width="240" y="144" as="geometry" />
+        </mxCell>
+        <mxCell id="col_p_ven" parent="tbl_pedido" style="text;strokeColor=#d1d5db;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontColor=#233763;fontSize=12;" value="FK   vendedor_id               INT" vertex="1">
+          <mxGeometry height="28" width="240" y="172" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_cliente" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=32;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#233763;strokeColor=#233763;fontColor=#ffffff;fontSize=13;strokeWidth=1.5;" value="cliente" vertex="1">
+          <mxGeometry height="144" width="230" x="850" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="col_c_id" parent="tbl_cliente" style="text;strokeColor=#d1d5db;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontStyle=1;fontColor=#233763;fontSize=12;" value="PK   id                              INT" vertex="1">
+          <mxGeometry height="28" width="230" y="32" as="geometry" />
+        </mxCell>
+        <mxCell id="col_c_nome" parent="tbl_cliente" style="text;strokeColor=#d1d5db;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontColor=#111827;fontSize=12;" value="        nome                  VARCHAR" vertex="1">
+          <mxGeometry height="28" width="230" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="col_c_tel" parent="tbl_cliente" style="text;strokeColor=#d1d5db;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontColor=#111827;fontSize=12;" value="        telefone             VARCHAR" vertex="1">
+          <mxGeometry height="28" width="230" y="88" as="geometry" />
+        </mxCell>
+        <mxCell id="col_c_end" parent="tbl_cliente" style="text;strokeColor=#d1d5db;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontColor=#111827;fontSize=12;" value="        endereco           VARCHAR" vertex="1">
+          <mxGeometry height="28" width="230" y="116" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_produto" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=32;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#233763;strokeColor=#233763;fontColor=#ffffff;fontSize=13;strokeWidth=1.5;" value="produto" vertex="1">
+          <mxGeometry height="200" width="230" x="200" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="col_pr_id" parent="tbl_produto" style="text;strokeColor=#d1d5db;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontStyle=1;fontColor=#233763;fontSize=12;" value="PK   id                              INT" vertex="1">
+          <mxGeometry height="28" width="230" y="32" as="geometry" />
+        </mxCell>
+        <mxCell id="col_pr_cod" parent="tbl_produto" style="text;strokeColor=#d1d5db;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontColor=#111827;fontSize=12;" value="        codigo                VARCHAR" vertex="1">
+          <mxGeometry height="28" width="230" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="col_pr_mod" parent="tbl_produto" style="text;strokeColor=#d1d5db;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontColor=#111827;fontSize=12;" value="        modelo               VARCHAR" vertex="1">
+          <mxGeometry height="28" width="230" y="88" as="geometry" />
+        </mxCell>
+        <mxCell id="col_pr_tam" parent="tbl_produto" style="text;strokeColor=#d1d5db;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontColor=#111827;fontSize=12;" value="        tamanho                    INT" vertex="1">
+          <mxGeometry height="28" width="230" y="116" as="geometry" />
+        </mxCell>
+        <mxCell id="col_pr_pre" parent="tbl_produto" style="text;strokeColor=#d1d5db;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontColor=#111827;fontSize=12;" value="        preco              DECIMAL" vertex="1">
+          <mxGeometry height="28" width="230" y="144" as="geometry" />
+        </mxCell>
+        <mxCell id="col_pr_ped" parent="tbl_produto" style="text;strokeColor=#d1d5db;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontColor=#233763;fontSize=12;" value="FK   pedido_id                  INT" vertex="1">
+          <mxGeometry height="28" width="230" y="172" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_entrega" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=32;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#233763;strokeColor=#233763;fontColor=#ffffff;fontSize=13;strokeWidth=1.5;" value="entrega" vertex="1">
+          <mxGeometry height="172" width="250" x="700" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="col_e_id" parent="tbl_entrega" style="text;strokeColor=#d1d5db;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontStyle=1;fontColor=#233763;fontSize=12;" value="PK   id                                  INT" vertex="1">
+          <mxGeometry height="28" width="250" y="32" as="geometry" />
+        </mxCell>
+        <mxCell id="col_e_cod" parent="tbl_entrega" style="text;strokeColor=#d1d5db;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontColor=#111827;fontSize=12;" value="        codigo_rastreio   VARCHAR" vertex="1">
+          <mxGeometry height="28" width="250" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="col_e_sta" parent="tbl_entrega" style="text;strokeColor=#d1d5db;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontColor=#111827;fontSize=12;" value="        status                  VARCHAR" vertex="1">
+          <mxGeometry height="28" width="250" y="88" as="geometry" />
+        </mxCell>
+        <mxCell id="col_e_dat" parent="tbl_entrega" style="text;strokeColor=#d1d5db;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontColor=#111827;fontSize=12;" value="        data_envio                DATE" vertex="1">
+          <mxGeometry height="28" width="250" y="116" as="geometry" />
+        </mxCell>
+        <mxCell id="col_e_ped" parent="tbl_entrega" style="text;strokeColor=#d1d5db;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontColor=#233763;fontSize=12;" value="FK   pedido_id                    INT" vertex="1">
+          <mxGeometry height="28" width="250" y="144" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_usu_ped" edge="1" parent="1" source="tbl_usuario" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;fontStyle=2;html=1;endArrow=ERzeroToMany;startArrow=ERmandOne;rounded=0;strokeColor=#233763;fontColor=#233763;strokeWidth=1.5;" target="tbl_pedido" value="registra">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_cli_ped" edge="1" parent="1" source="tbl_cliente" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;fontStyle=2;html=1;endArrow=ERzeroToMany;startArrow=ERmandOne;rounded=0;strokeColor=#233763;fontColor=#233763;strokeWidth=1.5;" target="tbl_pedido" value="faz">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_ped_pro" edge="1" parent="1" source="tbl_pedido" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;fontStyle=2;html=1;endArrow=ERoneToMany;startArrow=ERmandOne;rounded=0;strokeColor=#233763;fontColor=#233763;strokeWidth=1.5;" target="tbl_produto" value="composto por">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_ped_ent" edge="1" parent="1" source="tbl_pedido" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;fontStyle=2;html=1;endArrow=ERmandOne;startArrow=ERmandOne;rounded=0;strokeColor=#233763;fontColor=#233763;strokeWidth=1.5;" target="tbl_entrega" value="possui">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
